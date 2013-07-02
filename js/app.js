@@ -16,7 +16,6 @@ app.factory('cordovaReady', function() {
     };
 
     document.addEventListener('deviceready', function () {
-        alert("device ready!");
       queue.forEach(function (args) {
         fn.apply(this, args);
       });

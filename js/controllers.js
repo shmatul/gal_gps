@@ -1,8 +1,10 @@
 function Welcome($scope,geolocation){
-    console.log("uo");
+
     var intervalId = setInterval(function () {
+        conole.log("call");
         geolocation.getCurrentPosition(function (position) {
             $scope.position = position;
+            console.log(position);
         });
     }, 100);
     
